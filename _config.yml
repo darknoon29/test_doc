@@ -1,1 +1,183 @@
 remote_theme:BlackrockDigital/startbootstrap-clean-blog
+
+# General
+source: src
+destination: web
+url: "https://darkcity.fr"
+baseurl: ""
+title: "Neard"
+description: "Test"
+logo: /img/logo.png
+version: 1.3.0
+paypal-button-id: ""
+
+# Social
+social:
+  email:
+  facebook:
+  github: darknoon29
+  twitter: darknoon29
+  reddit: darknoon29
+  linkedin:
+  xing:
+  stackoverflow:
+  snapchat:
+  instagram:
+  youtube:
+  spotify:
+  telephone:
+
+# Compress HTML
+compress_html:
+  ignore:
+    envs:
+      - "development"
+
+# Github
+github:
+  baseurl: https://github.com
+  user: neard
+  repo: neard
+
+# Paths
+paths:
+  assets: assets
+  npm: node_modules
+
+# Assets
+assets:
+  app: assets_app.json
+  vendor: assets_vendor.json
+
+# Filters
+filters:
+  css:
+    - src/css/**/*.css
+  js:
+    - src/js/**/*.js
+  data:
+    - src/_data/**/*.json
+  jekyll:
+    - src/**/*.html
+    - src/**/*.md
+    - src/_data/**/*
+    - src/_plugins/**/*.rb
+    - src/feed.xml
+    - src/feed.xslt.xml
+    - src/robots.txt
+    - src/sitemap.xml
+    - src/sitemap.xsl
+
+# Custom dirs
+release_dir: release
+download_dir: download
+
+# Navigation bar
+navbar:
+  logo: "img/logo.png"
+  links:
+    News: "news"
+    Get started: "doc/get-started"
+    Modules: "modules"
+    Documentation: "doc"
+    Donate: "donate"
+    Sponsors: "sponsors"
+    Privacy: "privacy"
+    Github: "https://github.com/darknoon29"
+
+# Author
+author:
+  name: darknoon29
+  email:
+  facebook:
+  github: darknoon29
+  twitter: darknoon29
+  reddit: darknoon29
+  linkedin:
+  xing:
+  stackoverflow:
+  snapchat:
+  instagram:
+  youtube:
+  spotify:
+  telephone:
+
+# Footer
+footer:
+  links-active:
+    rss: true
+    facebook: false
+    email: false
+    twitter: true
+    github: true
+    reddit: true
+    linkedin: false
+    xing: false
+    stackoverflow: false
+    snapchat: false
+    instagram: false
+    youtube: false
+    spotify: false
+    telephone: false
+
+# Posts
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+  reddit: true
+excerpt_length: 25
+timezone: "Europe/Paris"
+permalink: /news/:year-:month-:day-:title/
+tag_page: /news/tags/
+paginate_path: /news/page:num/
+paginate: 5
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "<!--more-->"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+
+# Default YAML values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      social-share: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      comments: false
+      markdown_body: "markdown-body"
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - css
+  - js
+  - vendor
+keep_files:
+  - .git
+  - .svn
+  - assets
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
